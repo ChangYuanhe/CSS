@@ -1,0 +1,36 @@
+/* 
+selector
+tag    <h1><p> 
+
+#id(唯一)
+
+.class        tag .class(所有有class类的<tag>)
+
+.class tag  (有.class的元素里所有的<tag>)
+.class > tag (有.class的元素里第一层的所有<tag>)
+.class + tag (与有.class的元素同一层紧接着的<tag>)
+.class ~ tag (与有.class的元素同一层后面所有的<tag>)
+
+* 所有
+
+tag [attribute] 有attribute的tag
+tag [attribute = ] attribute = 的tag
+tag [attribute ^= ] attribute以 开头的tag
+tag [attribute $= ] attribute以 结尾的tag
+tag [attribute *= ] attribute含有 的tag
+
+伪类
+tag : link    a标签
+tag : visited   a标签
+tag : hover     所有标签
+tag : active      所有标签      lvha 须按顺序
+
+针对表单元素 tag : checked  tag : focus
+tag : nth-child(2n+1)  与tag同级的所有元素，按照个数计数
+tag : nth-of-type(2)    与tag同级的所有tag元素 按照标签计数  https://www.cnblogs.com/pssp/p/5991029.html
+tag : first-of-type()   tag :last-of-type   tag :only-of-type  
+
+tag : after{content = ; color = red}   tag : before 添加文本
+
+可以用,连接两个selector
+*/
