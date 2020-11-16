@@ -1,0 +1,23 @@
+    /* 
+    content height  width   padding    border  margin 
+
+    margin-top: ;   margin-bottom: ;    margin-left: ;  margin-right: ;
+    margin: -5px 10px 15px 10px;上右下左，顺时针   可以为负数
+    margin: 5px 10px;上下 左右
+    margin:auto;用于左右居中https://www.cnblogs.com/raind/p/10726591.html
+
+    padding内边距 用法 同 margin外边距
+
+    border-radius:圆角 ;    border-width: ; border-style: solid double dotted dashed虚线; 
+    border-collapse: separate分开表格 collapse合并表格; 
+
+    溢出 overflow:visible;  溢出内容显示在外面
+         overflow:hidden;   溢出内容不显示
+         overflow:scroll;   所有内容用滚动条显示
+         overflow:auto;     仅有溢出内容时用滚动条显示
+
+        width:  ;
+        box-sizing: content-box;此时width代表内容的宽度（默认情况）
+        box-sizing: border-box;此时width代表内容和padding border的宽度，但不包括margin
+        width:   ;      height:     ; 
+        https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing*/

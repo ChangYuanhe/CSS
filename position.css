@@ -1,0 +1,34 @@
+/*
+position:relative;相对定位
+    1.通过top right bottom left调节,类似于margin
+    2.没有定位偏移量时,不产生任何影响
+    3.不影响其他元素(不脱离文档流)
+    4.相对于元素初始位置进行调节
+
+position:absolute;绝对定位
+css中    
+    .div1{
+        position:   (只要父元素指定了position就可成为定位祖先元素);
+    }
+    .div2{
+        position:absolute left:100px top:100px;
+    }
+html中
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+    
+    1.元素脱离文档流(类似float),会影响其他元素
+    2.使内联元素支持宽高，块元素的默认宽由内容决定(float)
+    3.有定位祖先元素则相对于定位祖先元素偏移,否则相对于整个文档偏移
+
+position:fixed;固定定位
+    1.特性与绝对定位相似
+    2.元素的位置会固定在浏览器界面的某一位置,不随滚动条滚动
+    3.不会相对于定位祖先元素进行位置偏移
+
+position:stiky;黏性定位
+    1.类似相对定位
+    2.拖动滚动条,元素达到预设的top,left等位置时便会保持相对于浏览器界面固定(黏住)
+
+z-index:0;      控制显示的层级(absolute, 默认为零, 可以为负数)https://www.bilibili.com/video/BV1gt4y1m7Eo?p=145

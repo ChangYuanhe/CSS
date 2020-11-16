@@ -1,0 +1,22 @@
+    /* text-align:center;
+       font-size: 16px;像素  
+       font-weight: bold;normal 800  
+       font-family: Arial, Helvetica, sans-serif;monospace等宽 serif有衬线 sans-serif无衬线  
+       font-style: italic; 斜体 
+
+       text-decoration: underline; 下划线 none
+    
+       letter-spacing: 1em;字母间距  
+       word-spacing: 1.5em词间距;  
+    
+       em rem px https://www.cnblogs.com/webdragon/p/11185979.html  
+
+       list-style-type: disc square none;  
+       list-style-image: url();
+       
+       cursor改变光标的样式;
+       cursor:default;默认
+       cursor:pointer;点击
+       cursor:move;移动
+       cursor:help;帮助
+       cursor:url(图片的地址),auto;   自定义，图片扩展名需要为.ico或.cur;

@@ -1,0 +1,12 @@
+/*
+无默认样式:<span>   <div>
+
+有默认样式:<body>   margin:8px;
+          <h1>  margin:上下 21.440px;
+                font-weight:bold;
+          <P>   margin:上下16px;
+          <ul>  margin:上下16px；
+                padding:左40px;
+                list-style:disc;
+          <a>   text-decoration:underline;
+                cursor:pointer;

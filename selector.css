@@ -2,9 +2,13 @@
 selector
 tag    <h1><p> 
 
+<div class="block block1"></div>
+<div class="block block2"></div>
+共用一个.block的类名,分别有一个.block1和.block2的类名
+
 #id(唯一)
 
-.class        tag .class(所有有class类的<tag>)
+.class        tag.class(有.class类的所有<tag>)
 
 .class tag  (有.class的元素里所有的<tag>)
 .class > tag (有.class的元素里第一层的所有<tag>)
@@ -26,11 +30,11 @@ tag : hover     所有标签
 tag : active      所有标签      lvha 须按顺序
 
 针对表单元素 tag : checked  tag : focus
-tag : nth-child(2n+1)  与tag同级的所有元素，按照个数计数
+tag : nth-child(2n+1)  与tag同级的所有元素，按照个数计数    even偶数    odd奇数
 tag : nth-of-type(2)    与tag同级的所有tag元素 按照标签计数  https://www.cnblogs.com/pssp/p/5991029.html
 tag : first-of-type()   tag :last-of-type   tag :only-of-type  
 
-tag : after{content = ; color = red}   tag : before 添加文本
+tag : after{content = ; color = red}   tag : before    用于添加文本
 
 可以用,连接两个selector
 */

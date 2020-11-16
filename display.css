@@ -1,0 +1,28 @@
+/* 按类型分类     block    inline   inline-block  
+
+    block块:div p ul li h1
+    1.独占一行,所占区域是一个矩形
+    2.支持所有样式  width height margin  padding
+    3.不写宽的时候,与父元素宽相同 
+
+   
+   inline内联:span  a  strong  l  img
+   1.挨在一起,不一定是矩形
+   2.不支持width  height  margin   padding等样式
+   3.宽度由内容决定                                     <span></span>
+   4.内联标签之间如果换行,会产生空隙,由font-size决定      <span></span>会显示在同一行,并有空隙 
+
+   inline-block:input select
+   1.挨在一起,会有空隙
+   2.支持所有样式,所占区域是个矩形 
+
+   display  改变类型
+   display:block     display:inline     display:inline-block
+   display:none 
+  
+   visibility:hidden;  visibility: visible;
+  
+ 
+   visibility: hidden;用于隐藏元素，保留空间 
+   display: none;用于隐藏元素，不占用空间 
+   https://www.runoob.com/css/css-display-visibility.html 

@@ -1,4 +1,18 @@
+/* body {
+    background-color: #c43f3f;
+    color: #777777;
+    font-size: 16px;
+    font-weight: normal; 
+} */
+body{
+    background: #555555;
+    color: aquamarine;
+}
 
 div.box1 {
-    color   : rgb(93, 182, 138);
+    background : #f4f4f4;
+    font:  bold 20px Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
 }

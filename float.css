@@ -1,0 +1,48 @@
+/* float:left;    float:right;
+https://www.bilibili.com/video/BV1gt4y1m7Eo?p=138
+1.可用于实现图文混排
+2.脱离文档流
+3.会自动换行
+4.使内联元素支持宽高,块元素默认宽由内容决定
+ */
+
+.maincontent{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    }
+
+.sidebar{
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    }
+.last{
+    width: 100px;
+    clear: both;
+} 
+/*
+元素浮动后,下方的元素会忽略浮动元素的高度,与其重合
+clear表示不允许左右侧有浮动,用于清除.maincontent和.sidebar的浮动,
+防止.last上移与.maincontent重叠,https://www.bilibili.com/video/BV17V411f7Sn
+
+
+子元素浮动后,父元素也会忽略子元素的高度,导致高度为零,无法撑开
+
+清除浮动clearfix方法一
+在需要clear时，html中浮动元素下方新增一个空内容的div用于clear
+html    <div class="clearfix"><div>
+css     .classfix{clear:both;} 
+
+清除浮动clearfix方法二 
+css中   .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+        }
+html中  命名需要清除浮动的元素为<div class = "clearfix father"></div>
+https://www.jianshu.com/p/9d6a6fc3e398
+*/
