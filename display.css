@@ -6,11 +6,12 @@
     3.不写宽的时候,与父元素宽相同 
 
    
-   inline内联:span  a  strong  l  img
+   inline内联:span  a  strong  l  img(支持宽高)
    1.挨在一起,不一定是矩形
    2.不支持width  height  margin   padding等样式
    3.宽度由内容决定                                     <span></span>
    4.内联标签之间如果换行,会产生空隙,由font-size决定      <span></span>会显示在同一行,并有空隙 
+   5.文字(包括图片)按照文字基线而非文字底线对齐  默认vertical-align:baseline 而非vertical-align:bottom
 
    inline-block:input select
    1.挨在一起,会有空隙

@@ -1,0 +1,12 @@
+/*https://www.bilibili.com/video/BV1gt4y1m7Eo?p=192
+通过规定  
+         position:absolute;   position:fixed;
+         float:除了none以外的其他值
+         overflow:除了visiable以外的其他值(hidden auto scroll)
+         display:inine-block; display:flex; display:table-cells;
+来触发BFC，使得元素成为一个独立容器
+
+可用于1.解决margin的覆盖问题(上下俩元素分别规定了margin-bottom和margin-top)
+     2.解决margin传递问题(子元素规定margin后导致父元素也出现了margin)
+     3.解决浮动问题(清除浮动)
+     4.解决覆盖问题(即图文混排)   可用于构建一侧固定一侧响应式网页

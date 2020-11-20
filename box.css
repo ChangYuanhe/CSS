@@ -4,12 +4,16 @@
     margin-top: ;   margin-bottom: ;    margin-left: ;  margin-right: ;
     margin: -5px 10px 15px 10px;上右下左，顺时针   可以为负数
     margin: 5px 10px;上下 左右
+    两个元素分别存在margin-top和margin-bottom，会取较大的一个作为两元素之间的margin值
     margin:auto;用于左右居中https://www.cnblogs.com/raind/p/10726591.html
 
     padding内边距 用法 同 margin外边距
 
     border-radius:圆角 ;    border-width: ; border-style: solid double dotted dashed虚线; 
     border-collapse: separate分开表格 collapse合并表格; 
+
+    outline 轮廓，显示在content外padding内，不占用实际空间，一般为矩形
+    input="text"和button 默认带有outline
 
     溢出 overflow:visible;  溢出内容显示在外面
          overflow:hidden;   溢出内容不显示

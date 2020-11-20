@@ -1,5 +1,6 @@
 /* 
 #000000 黑      #ffffff  白
+#000000xy    xy为透明度
 rgb(0, 0, 0)   rgb(255, 255, 255)  red green blue 
 RGBA rgb( , , , 0)  rgb( , , , 1)   透明度
 hsl(0, 0, 0)   hsl (360%, 100%, 100%)  hue saturation lightness   色相 饱和度 亮度 也可以加入透明度 

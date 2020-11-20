@@ -1,0 +1,45 @@
+/*
+transition  发生变化时的过渡
+    transition-property:all  width;   需要过渡的属性
+    transition-duration:"x"s;     过渡的持续时长
+    transition-delay:"y"s;   过渡的延迟时长  y可以为负数,过渡提前,即从x-y s开始过渡
+    transition-timing-function: cubic-bezier(一组数 http://cubic-bezier.com)自定义 
+                                linear匀速   ease(默认)缓冲,先快后慢;     设置过渡的样式  
+    transition 可以合写 第一个时间为duration 第二个为delay
+    transition一般加给.class而非.class:hover
+    https://www.bilibili.com/video/BV1gt4y1m7Eo?p=195
+
+
+
+transform变形
+1.transform不会影响到其他元素
+2.transform只能添加给block元素
+3.trasform的执行会按照从后往前的顺序进行,translate会受到scale rotate skew的影响(所以把translate写在第一个)
+
+.class{
+    transition:all 2s 1s linear;
+}
+.class:hover{
+    transform:translate(100px, 100px) scale(2) rotate(45deg) skew(-30deg， -30deg);
+}
+
+    trasnlate  位移
+        translateX  横向
+        translateY  纵向
+        translateZ  3D
+
+    scale   缩放   大于一放大,小于一缩小,只写一个数时默认为横纵同时缩放,
+        scaleX  横向
+        scaleY  纵向
+        scaleZ  3D
+
+    rotate  旋转    角度值,单位为deg,正数为顺时针   只写一个数默认为rotateZ
+        rotateX 3D
+        rotateY 3D
+        rotateZ 
+
+    skew   斜切     角度值,单位为deg,正数为向左倾斜
+        skewX
+        skewY
+
+        默认以元素中心为基点进行transform, 可以通过transform-origin：px px;进行调整

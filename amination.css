@@ -1,0 +1,23 @@
+/*
+animation动画
+
+.class{
+    animation-name:demo;                    为动画取个名字
+    animation-duration:4s;                  与transition相似
+    animation-delay:0s;                     与transition相似
+    animation-iteration-count:infinite;     动画重复次数
+    animation-timing-function:linear;       与transition相似
+}
+animation也可以合写,与transition相似
+
+设定动画“关键帧”，进行动画制作
+@keyframes demo{
+    0%{transform:translate(0, 0);}
+    25%{transform:translate(0, 100px);}
+    50%{transform:translate(100px, 100px);}
+    75%{transform:translate(0, 100px);}
+    100%{transform:translate(0, 0);}
+}
+
+from和0%等效
+to和100%等效

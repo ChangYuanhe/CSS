@@ -29,7 +29,7 @@ tag : visited   a标签
 tag : hover     所有标签
 tag : active      所有标签      lvha 须按顺序
 
-针对表单元素 tag : checked  tag : focus
+针对表单元素 tag : checked  tag : focus 获得焦点（点击）时
 tag : nth-child(2n+1)  与tag同级的所有元素，按照个数计数    even偶数    odd奇数
 tag : nth-of-type(2)    与tag同级的所有tag元素 按照标签计数  https://www.cnblogs.com/pssp/p/5991029.html
 tag : first-of-type()   tag :last-of-type   tag :only-of-type  
@@ -38,3 +38,4 @@ tag : after{content = ; color = red}   tag : before    用于添加文本
 
 可以用,连接两个selector
 */
+/* 当选择器之间的描述冲突时，选择器的范围越小，越精准，则权重越高https://www.bilibili.com/video/BV1gt4y1m7Eo?p=19 */
