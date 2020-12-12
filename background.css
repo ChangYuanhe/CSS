@@ -1,0 +1,37 @@
+/*
+    background 不止可以添加给body
+    background: url();
+
+    background-repeat: no-repeat;   不通过重复填充
+    background-repeat: repeat-x;    横向重复填充
+    background-repeat: repeat-y;    纵向重复填充
+    background-repeat: repeat;      默认值 重复填充
+
+    background-size:100px 100px;   默认值为auto
+    background-size:cover;         图像原比例完全覆盖容器 图像的某些部分也许无法显示
+    background-size:contain;       图像扩展至其宽度和高度完全适应内容区域 部分容器也许未被覆盖
+
+    
+    
+    渐变
+    线性渐变    linear-gradient
+    background-image: linear-gradient(to right bottom或45deg, red 0%, blue 50%, yellow 100%);
+        0deg 默认为to top  正值为顺时针旋转 负值为逆时针旋转
+        
+        径向渐变    radial-gradient
+        
+        
+background-origin background-position和background-clip
+https://blog.csdn.net/zsm4623/article/details/105409767
+
+    background-origin   确定backgroun-position的基点位置, 设置no-repeat时图片在容器左上角
+        background-origin:content-box;  不被padding和border覆盖
+        background-origin:border-box;   被border和padding覆盖
+        background-origin:padding-box;  默认值, 被padding覆盖
+    
+    background-clip     当图片大小不足时的填充方式   
+        background-clip:content-box;        只填充content
+        background-clip:padding-box;        填充到padding
+        background-clip:border-box;         填充到border 默认值
+
+    background-position  确定图片位置

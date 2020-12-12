@@ -1,0 +1,17 @@
+/*
+text-shadow     文字阴影
+    text-shadow: x y blur color; 右移量 下移量 模糊度 颜色
+    可以通过,分割设置多个阴影
+    默认颜色与文字颜色相同
+    text-shadow: 10px 10px 10px blue, 10px -10px 20px red;
+
+
+box-shadow      盒子阴影
+    box-shadow:x y blur spread color inset;
+    spread  向外延展量
+    inset 设置为内阴影而非默认的外阴影
+    默认颜色为黑色
+    可以通过,分割设置多个阴影
+
+设置模糊度
+    filter : blur(10px);

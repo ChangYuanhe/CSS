@@ -5,7 +5,7 @@
           <h1>  margin:上下 21.440px;
                 font-weight:bold;
           <P>   margin:上下16px;
-          <ul>  margin:上下16px；
+          <ul>  margin:上下16px;
                 padding:左40px;
                 list-style:disc;
           <a>   text-decoration:underline;
@@ -21,7 +21,7 @@ ul{
       list-style:none;
 }
 a{
-      txet-decoration:none;
+      text-decoration:none;
 }
 img{
       display:block;

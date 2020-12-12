@@ -1,0 +1,50 @@
+/*
+弹性布局  适合处理一维布局
+display: flex;加在父容器上
+
+
+写在父容器上
+    flex-direction:row;             内部元素从左到右按行排列  左对齐(默认值)
+    flex-direction:row-reverse;     内部元素从右到左按行排列  右对齐
+    flex-direction:column;          内部元素从上到下按列排列  上对齐
+    flex-direction:column-reverse;  内部元素从下到上按列排列  下对齐
+
+    flex-wrap:nowrap;               不折行, 改变内部元素宽度以显示在同一行(默认值)
+    flex-wrap:wrap;                 溢出内容折行显示
+    flex-wrap:wrap-reverse;         将wrap方式显示内容上下翻转得到
+    
+flex-direction和flex-wrap可以用flex-flow复合写法    flex-flow:row nowrap;
+
+
+    justify-content     决定了在flex-direction方向上内部元素的对齐方式和空白的分布方式
+    justify-content:flex-start;         起始位置对齐(默认值)        
+    justify-content:flex-end;           结束位置对齐
+    justify-content:center;             居中对齐
+    justify-content:space-between;      两端对齐, 空白分布在子项之间
+    justify-content:space-around;       每个内部元素两侧环绕互不干扰的等宽空白(边缘空白只有内部空白的一半)
+    justify-content:space-evenly;       每个内部元素两侧分布等宽的空白
+
+
+    align-items         决定了在flex-direction 垂直 方向上 单行 内部元素的对齐方式(单行时使用)
+                                                    (自动给每一行分配100% 50% 33% 25%...的空间)
+    align-items:stretch;                内部元素被拉伸铺满分配空间(默认值)    
+    align-items:flex-start;             分配空间顶部对齐
+    align-items:flex-end;               分配空间底部对齐    
+    align-items:center;                 分配空间居中对齐
+
+
+    align-content     决定了在flex-direction 垂直 方向上 所有 内部元素的对齐方式 和空白的分布方式(多行时使用)
+    align-content:flex-start;         起始位置对齐(默认值)        
+    align-content:flex-end;           结束位置对齐
+    align-content:center;             居中对齐
+    align-content:space-between;      空白分布在内部元素整体外(默认值)
+    align-content:space-around;       每个内部元素两侧环绕互不干扰的等宽空白(边缘空白只有内部空白的一半)
+    align-content:space-evenly;       每个内部元素两侧分布等宽的空白
+
+
+
+写在子项上
+    order:0;        设定子项的排列顺序 默认每个元素的order为0,数值越小越靠前
+    flex-grow:1;    扩展子项宽度,扩展宽度大小为剩余空白大小的一定比例,最大为1,默认值为0
+    flex-shrink:1;  空间不足时子项的收缩比例 默认值为1, 为0时不收缩 
+    align-self:center;      针对单个元素的align-items

@@ -1,0 +1,40 @@
+/*
+网格布局  适合处理二维布局
+display:grid;写在父容器上
+
+写在父容器上
+    grid-template-rows:100px auto 25%;
+    grid-template-columns:1fr 1fr 1fr;
+    将容器分为三行三列      fr为剩余空间比例单位 类比flex-grow
+    
+    容器规则分割也可以写为
+    grid-template-rows:repeat(3, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+
+    grid-template-area:         为父容器分块, 再在子项中引入 grid-area: a1; 即可
+    "a1 a1 a1"
+    "a2 a2 a3"
+    "a2 a2 a3";
+
+    grid-row-gap    grid-column-gap     设置横纵间距
+
+    justify-items
+    align-items
+    
+    justify-content
+    align-content
+
+写在子项上
+    通过grid-template将父容器划分为3*3的正方形后
+    左数共四根线记作1 2 3 4         上数共四根线记作1 2 3 4
+    用于划分区域 效果同grid-template-area
+    grid-column-start:2; 
+    grid-column-end:3; 
+    grid-row-start:2; 
+    grid-row-end:span 2;        span指截取区域个数  等效于grid-row-end:4;
+
+    grid-area:a2;
+    grid-area:2/3/2/4;  
+
+    justify-self        align-self
+

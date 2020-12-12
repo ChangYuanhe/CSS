@@ -21,3 +21,17 @@ animation也可以合写,与transition相似
 
 from和0%等效
 to和100%等效
+
+animation-fill-mode:none;           默认值, 动画结束后回到起始位置, 0%在延迟后执行
+animation-fill-mode:backward;       动画结束后回到起始位置, 0%在延迟前执行
+animation-fill-mode:forward;        动画结束后停留在结束位置, 0%在延迟后执行
+animation-fill-mode:both;           动画结束后停留在结束位置, 0%在延迟前执行
+
+animation-direction:决定播放动画的方向
+
+animation-direction:normal;         默认值, 永远都是正向  0%到100%
+animaiton-direction:reverse;        永远都是反向         100%到0%
+animation-direction:alternate;      一次正向, 一次反向   一次0%到100%, 一次100%到0%
+
+
+下载animation库   https://animate.style/

@@ -26,20 +26,38 @@ transform变形
     trasnlate  位移
         translateX  横向
         translateY  纵向
-        translateZ  3D
+        translateZ  3D  正数向前
 
-    scale   缩放   大于一放大,小于一缩小,只写一个数时默认为横纵同时缩放,
+    scale   缩放   大于一放大,小于一缩小,只写一个数时默认为横纵同时缩放,-1时翻转
         scaleX  横向
         scaleY  纵向
-        scaleZ  3D
+        scaleZ  3D, 改变立体图形的厚度
 
-    rotate  旋转    角度值,单位为deg,正数为顺时针   只写一个数默认为rotateZ
-        rotateX 3D
-        rotateY 3D
-        rotateZ 
+    rotate  旋转    角度值,单位为deg,   只写一个数默认为rotateZ
+        rotateX     3D  正数向上翻转(向第一象限翻转)
+        rotateY     3D  正数向右翻转(向第一象限翻转)
+        rotateZ         正数为顺时针
 
     skew   斜切     角度值,单位为deg,正数为向左倾斜
         skewX
         skewY
 
-        默认以元素中心为基点进行transform, 可以通过transform-origin：px px;进行调整
+
+    默认以元素中心为基点进行transform, 可以通过transform-origin：px px; transform-origin:left center(z轴不支持);进行调整
+
+    3D
+        perspective:100px;   景深, 即距离屏幕多远去观测动画, 距离越远, 运动幅度越小
+        perspective-origin:top right;    确定景深基点, 默认为正前方
+        transform-style:flat  平面(默认值)         transform-style:preserve-3d    保留3D效果, 3D空间
+        外层加perspective, 内层加transform-style
+        
+
+    3d写法
+        scale3d（x, y, z）  三个值  x y z
+        translate3d（x, y, z）  三个值   x y z
+        rotate3d（1, 1, 1, 300deg）  四个值  0或1（x轴是否旋转）0或1（y轴是否旋转）0或1（z轴是否旋转）deg
+
+    
+    调整透明度opacity后, 改变backface-visibility的值以确定是否可以看到图片的背面(即翻转后的图片)
+        backface-visibility:visible;    可见,默认值
+        backface-visibility:hidden;     不可见
